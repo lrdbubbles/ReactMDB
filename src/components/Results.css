@@ -1,0 +1,15 @@
+.results {
+  margin: 0;
+  background-color: rgb(76, 76, 76);
+  width: 400px;
+  height: auto;
+  position: absolute;
+  /* transform: translate(0, 10px); */
+  border-radius: 0.2rem;
+  color: white;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
