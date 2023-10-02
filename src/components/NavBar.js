@@ -2,11 +2,18 @@ import "./NavBar.css";
 import Results from "./Results";
 import { useState, useEffect } from "react";
 
-function NavBar() {
-  const key = "b1d951fa";
+function NavBar({
+  setShowResults,
+  showResults,
+  onSelectMovie,
+  movies,
+  setMovies,
+  query,
+  setQuery,
+}) {
   const controller = new AbortController();
-  const [query, setQuery] = useState("");
-  const [movies, setMovies] = useState([]);
+
+  const key = "b1d951fa";
 
   useEffect(
     function () {
@@ -17,6 +24,7 @@ function NavBar() {
         );
         const data = await res.json();
         setMovies(data.Search);
+        if (query > 3) setShowResults("true");
       }
       fetchMovies();
     },
@@ -35,7 +43,9 @@ function NavBar() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           ></input>
-          {query && <Results movies={movies} />}
+          {showResults && (
+            <Results movies={movies} onSelectMovie={onSelectMovie} />
+          )}
         </span>
       </div>
     </div>
