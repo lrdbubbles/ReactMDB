@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReactMDB/static/css/main.e89c567f.css",
+    "main.js": "/ReactMDB/static/js/main.010ec28d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/ReactMDB/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/ReactMDB/index.html",
+    "main.e89c567f.css.map": "/ReactMDB/static/css/main.e89c567f.css.map",
+    "main.010ec28d.js.map": "/ReactMDB/static/js/main.010ec28d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/ReactMDB/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e89c567f.css",
+    "static/js/main.010ec28d.js"
+  ]
+}
